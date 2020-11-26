@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div id="Drum_app">
+            
+                <h3>type you name:</h3>
+                <input type="text" v-model="name">
+                <h1>Welcome to {{(name)}}'s live show</h1>
+                <h3>Use A,S,D,F,G,H,J for sounds</h3>
+                <div class="drums">
+                <button @click.prevent="playSound('sounds/snare.mp3')"><img src="images/snare.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/tom-3.mp3')"><img src="images/tom3.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/tom-1.mp3')"><img src="images/tom1.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/kick-bass.mp3')"><img src="images/kick.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/tom-2.mp3')"><img src="images/tom2.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/tom-4.mp3')"><img src="images/tom4.png" alt=""></button>
+                <button @click.prevent="playSound('sounds/crash.mp3')"><img src="images/crash.png" alt=""></button>
+            </div>
+
+
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
